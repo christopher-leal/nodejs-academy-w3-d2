@@ -1,4 +1,4 @@
-import logger from "./src/config/winston";
+import logger from "./src/config/logger";
 import dotenv from 'dotenv'
 import app from './app'
 

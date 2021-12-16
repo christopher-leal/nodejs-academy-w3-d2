@@ -1,5 +1,5 @@
 import { createClient } from 'redis'
-import logger from './../config/winston'
+import logger from '../config/logger'
 
 const client = createClient({
   url: 'redis://localhost:6379'

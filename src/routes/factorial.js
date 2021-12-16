@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import factorial from '../lib/factorial'
 import client from '../db/redis'
-import logger from './../config/winston'
+import logger from '../config/logger'
 
 const router = Router()
 
