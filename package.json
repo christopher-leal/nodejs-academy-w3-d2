@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-academy-w3-d2",
+  "version": "1.0.0",
+  "description": "NodeJS Academy code example. W3 d2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopher-leal/nodejs-academy-w3-d2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopher-leal/nodejs-academy-w3-d2/issues"
+  },
+  "homepage": "https://github.com/christopher-leal/nodejs-academy-w3-d2#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "nodemon": "^2.0.15",
+    "standard": "^16.0.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "redis": "^4.0.1",
+    "winston": "^3.3.3"
+  }
+}
