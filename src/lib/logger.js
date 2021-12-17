@@ -47,4 +47,5 @@ switch (debugFlag) {
 }
 
 const logger = createLogger(loggerService)
+
 module.exports = logger
