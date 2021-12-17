@@ -1,4 +1,4 @@
-import logger from "./src/config/logger";
+import logger from './utils/logger'
 import dotenv from 'dotenv'
 import app from './app'
 

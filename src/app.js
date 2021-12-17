@@ -1,10 +1,10 @@
 import express from 'express'
-import morgan  from 'morgan'
-import routes from './src/routes'
+import morgan from 'morgan'
+import routes from './routes'
 
 const app = express()
 
-app.use(morgan('combined'))
+app.use(morgan('tiny'))
 
 app.use(routes)
 

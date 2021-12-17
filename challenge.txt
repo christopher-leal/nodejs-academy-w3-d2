@@ -1,0 +1,25 @@
+Config, config, config
+
++ Create a new API (You should define the routes, etc). Be crazy.
++ Use MongoDB and Postgres and Redis.
++ Design your models.
+  - You must have two relationships at least and use them in your api. Use populates.
+  - You must relate two collections at least and use them in your api. Use populates.
++ Use one DB for the incoming data (You choose which one).
++ Use one DB for the events, transformed data, etc, (you choose which one).
++ Your app must use redis.
++ Your project must use `dotenv`, `cross-env`, `config`.
++ Define 3 diferent environments.
++ Use the "script" section in your package.json file and define 4 useful scripts at least.
+
+Bonus.
+
+- Use Morgan
+- create your own logger library (info, warn and error) and 
+- Alternate between console and winston.  
+  Example:
+  node app.js --debug=winston
+  node app.js --debug=console
+  node app.js // turns off logging, except morgan
+
+
