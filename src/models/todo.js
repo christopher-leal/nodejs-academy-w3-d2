@@ -1,6 +1,10 @@
 import { Schema, model } from 'mongoose'
 
 const TodoSchema = new Schema({
+  title: {
+    type: String,
+    required: true
+  },
   desc: {
     type: String,
     required: true
@@ -16,6 +20,6 @@ const TodoSchema = new Schema({
   }
 }, { timestamps: true })
 
-const TodoModel = model('user', TodoSchema)
+const TodoModel = model('todo', TodoSchema)
 
 export default TodoModel
