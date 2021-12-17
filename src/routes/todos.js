@@ -10,7 +10,6 @@ router.get('/', async (req, res) => {
   try {
     const cachedTodos = await client.get('todos')
     if (cachedTodos) {
-      logger.info('here')
       return res.status(200).json({
         success: true,
         data: JSON.parse(cachedTodos)
