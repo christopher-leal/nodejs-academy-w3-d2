@@ -1,15 +1,17 @@
 import { Sequelize } from 'sequelize'
+import dotenv from 'dotenv'
 
-const sequelize = new Sequelize(`postgres://${process.env.POSTGRES_USER}:${process.env.POSTGRES_PASSWORD}@localhost:5432/postgres`)
+dotenv.config()
 
-const connect = async () => {
+const sequelize = new Sequelize(`postgres://${process.env.POSTGRES_USER}:${process.env.POSTGRES_PASSWORD}@localhost:5432/node_academy`)
+
+export const connect = async () => {
   try {
-    console.log(process.env)
     await sequelize.authenticate()
     console.log('Connection has been established successfully.')
   } catch (error) {
     console.error('Unable to connect to the database:', error)
   }
 }
-connect()
+
 export default sequelize
