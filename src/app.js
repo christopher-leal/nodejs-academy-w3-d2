@@ -4,6 +4,7 @@ import routes from './routes'
 import cors from 'cors'
 import helmet from 'helmet'
 import { redisConnection } from './db/redis'
+import './db/postgres'
 const app = express()
 
 app.use(morgan('tiny'))
