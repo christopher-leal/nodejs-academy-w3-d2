@@ -3,7 +3,7 @@ import morgan from 'morgan'
 import routes from './routes'
 import cors from 'cors'
 import helmet from 'helmet'
-import { redisConnection } from './db/redis'
+// import { redisConnection } from './db/redis'
 const app = express()
 
 app.use(morgan('tiny'))
@@ -13,7 +13,7 @@ app.use(express.json())
 
 app.use(routes)
 
-redisConnection()
+// redisConnection()
 
 app.get('/', (req, res) => {
   res.status(200).json({

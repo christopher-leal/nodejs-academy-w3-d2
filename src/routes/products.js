@@ -4,6 +4,7 @@ import faker from 'faker'
 const router = Router()
 
 const createProducts = (size = 1) => {
+  console.log(size)
   const products = []
   for (let i = 0; i < size; i++) {
     products.push({
