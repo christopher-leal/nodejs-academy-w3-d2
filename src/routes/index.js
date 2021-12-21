@@ -1,9 +1,8 @@
 import { Router } from 'express'
+import tournamentRouter from './tournament'
 
 const router = Router()
 
-// router.use('/factorial', factorialRouter)
-// router.use('/users', usersRouter)
-// router.use('/todos', todosRouter)
+router.use('/tournament', tournamentRouter)
 
 export default router

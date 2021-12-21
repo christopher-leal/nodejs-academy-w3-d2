@@ -17,10 +17,14 @@ const Tournament = sequelize.define('tournament', {
   visitorTeamScore: {
     type: DataTypes.INTEGER,
     allowNull: false
+  },
+  tournamentDate: {
+    type: DataTypes.DATEONLY,
+    allowNull: false
   }
 }, {
 })
-Tournament.belongsTo(Team, { as: 'localTeamId' })
-Tournament.belongsTo(Team, { as: 'visitorTeamId' })
+Tournament.belongsTo(Team, { as: 'localTeam' })
+Tournament.belongsTo(Team, { as: 'visitorTeam' })
 
 export default Tournament

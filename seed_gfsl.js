@@ -1,11 +1,11 @@
 import faker from 'faker'
-import { connect } from './src/db/postgres'
+import { seed } from './src/db/postgres'
 import Team from './src/models/team'
 import Player from './src/models/player';
 
 (async () => {
   try {
-    await connect()
+    await seed()
     for (let i = 0; i < 8; i++) {
       const team = await Team.create({
         name: faker.name.title()
